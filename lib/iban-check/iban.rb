@@ -28,7 +28,7 @@ module Iban
       result % 10
     end
 
-    def iban_recalculate_checksum
+    def recalculate_checksum
       store_checksum = checksum
       store_checksum + iban.slice(2,iban.length)
     end
